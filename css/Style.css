@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+
+}
+.nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav p{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: 25px;
+    font-family: "inter";
+}
+.nav a{
+    text-decoration: none;
+    color: #111;
+}
+.navbar{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+.navbar a{
+    text-decoration: none;
+    text-align: center;
+    color: #111;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "inter";
+}
+.navbar a:hover{
+    color:  rgba(56, 109, 170, 0.8);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "inter";
+}
+.content1 {
+    border: 1px solid red;
+    width: auto;
+    height: 400px;
+    background: url(/img/content1.png) center;
+}
+.content{
+    position: relative;
+}
+.content1 h2 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px #111;
+    font-family: "bebas";
+}
+.content2 h2{
+    font-family: "bebas";
+    margin-top: 25px;
+    margin-left: 200px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.temp{
+    margin-bottom: 20px;
+}
+.content3 {
+    width: auto;
+    height: 500px;
+    background: url(/img/dente-de-sabres.png) center;
+}
+.content3 h2 {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px #111;
+    font-family: "bebas";
+}
+.content3 p {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px #111;
+    font-family: "bebas";
+}
+
+.footer{
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .direitos{
+    font-weight: bold;
+    font-size: 25px;
+} 
+
+@font-face{
+    font-family: "inter";
+    src: url(/fonts/Inter-VariableFont_opsz_wght.woff)
+}
+@font-face{
+    font-family: "bebas";
+    src: url(/fonts/BebasNeue-Regular.woff)
+}
