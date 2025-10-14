@@ -53,6 +53,7 @@ a {
     font-weight: bold;
     font-size: 20px;
     font-family: "inter";
+    transition: 0.3s;
 }
 
 .content1 {
@@ -83,7 +84,6 @@ a {
 .content2 {
     width: 100vh;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .content2 h2 {
@@ -176,19 +176,57 @@ a {
     width: 100vh;
     margin: 0 auto;
     height: 300px;
-    border: 1px solid red;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.historia h2 {
+.texto-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.titulo-historia {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.titulo-historia h2 {
     font-family: "bebas";
     letter-spacing: 2px;
-    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-.historia img {
-    margin-top: 18px;
-    margin-left: 5px;
+.texto-historia p a {
+    text-decoration: none;
+    color: #111;
+    font-family: "inter";
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.texto-historia p a:hover {
+    color: #386daa;
+    text-decoration: underline;
+    border: 1px solid #386daa;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.foto img {
+    width: 270px;
+    border-radius: 35px;
+    height: 220px;
+    object-fit: cover;
 }
 
 .footer {
