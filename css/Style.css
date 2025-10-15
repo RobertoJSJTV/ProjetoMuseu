@@ -240,6 +240,15 @@ a {
     font-weight: bold;
     font-size: 25px;
 }
+.apoio p{
+    padding-right: 20px;
+    margin-right: 15px;
+}
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
 
 @font-face {
     font-family: "inter";
