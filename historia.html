@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="/js/conexao.js">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Museu Arca da Vida e do Tempo</title>
+</head>
+
+<body>
+    <div class="nav sticky">
+        <p><a href="index.html">Arca da Vida e do tempo</a></p>
+        <button class="burger" aria-label="Abrir menu">&#9776;</button>
+        <ul class="navbar">
+            <li><a href="">Museu</a></li>
+            <li><a href="">Exposições</a></li>
+            <li><a href="">Agendamento</a></li>
+            <li><a href="">Horarios</a></li>
+        </ul>
+    </div>
+    <div class="um">
+        <div class="content2">
+            <div class="conteudos">
+                <div class="conteudo1">
+                    <div class="conteudo-iterno">
+                        <img src="img/servicos.jpg" alt="imagem de um trabalhador do museu">
+                        <h4>Sobre o <br> museu</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content3">
+        <h1>História do Museu</h1>
+        <p>A Arca da Vida e do Tempo nasceu de um sonho ousado: preservar a história natural do planeta de uma forma que
+            fosse acessível e inspiradora para todos. Fundado em 1985 pelo visionário biólogo e paleontólogo Dr. Elias
+            Pereira, o museu começou como uma modesta coleção de fósseis e minerais em um galpão abandonado. Dr. Elias
+            acreditava que a chave para a compreensão do futuro estava no estudo do passado. Ele via o planeta como uma
+            grande "arca", carregando a vida através das eras, e o museu como o lugar onde essa jornada seria contada.
+        </p>
+        <p class="ultimo">Com o tempo, a paixão do Dr. Elias atraiu doações e financiamento, permitindo que a Arca se
+            expandisse. O
+            museu mudou para sua localização atual, um complexo arquitetônico moderno que incorpora elementos naturais,
+            como jardins botânicos e lagos artificiais. A coleção cresceu exponencialmente, com a adição de esqueletos
+            de dinossauros em tamanho real, dioramas de ecossistemas extintos e uma vasta coleção de espécimes vivos de
+            insetos, répteis e plantas. A Arca da Vida e do Tempo se tornou um farol de pesquisa e educação, colaborando
+            com universidades e centros de pesquisa de todo o mundo. A filosofia do Dr. Elias, de que o museu deve ser
+            uma ponte entre o passado e o futuro, continua a ser a força motriz por trás de cada nova exposição.</p>
+        <h1>Galeria</h1>
+    </div>
+    <div class="galery">
+        <figure>
+            <img src="/img/museu-antigo.jpg" alt="fotos do museu antigo">
+            <figcaption>museu no ano de 1985</figcaption>
+        </figure>
+        <figure>
+            <img src="/img/museu-2000.jpg" alt="foto do museu nos anos 2000">
+            <figcaption>museu no ano de 2000</figcaption>
+        </figure>
+        <figure>
+            <img src="/img/reforma-2003.jpg" alt="Foto da reforma do museu em 2003">
+            <figcaption>reforma do museu em 2003</figcaption>
+        </figure>
+        <figure>
+            <img src="/img/museu-fora.png" alt="foto do museu depois da reforma e atualmente">
+            <figcaption>museu atualmente</figcaption>
+        </figure>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="redes">
+            <a href="https://x.com/home"><img src="img/x.png" style="width: 29px; height: 29px;"
+                    alt="icone do twitter"></a>
+            <a href="https://www.facebook.com/"><img src="img/facebook.png" style="width: 29px; height: 29px;"
+                    alt="icone do facebook"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png" style="width: 29px; height: 29px;"
+                    alt="icone do instagram"></a>
+            <a href="https://www.youtube.com/"><img src="img/youtube.png" style="width: 29px; height: 29px;"
+                    alt="icone do youtube"></a>
+        </div>
+        <div class="direitos">
+            &copy; Todos os direitos reservados 2025
+            <p class="dev">desenvolvido por <a href="https://robertojsjtv.github.io/Portifolio/">Roberto Silva</a></p>
+        </div>
+        <div class="apoio">
+            <p>APOIO</p>
+            <div>
+                <a href="https://www.amazon.com.br"><img src="img/Amazon_logo.svg.png"
+                        style="width: 50px; height: auto;" alt="apoio da amazon"></a>
+                <a href="https://www.netflix.com"><img src="img/netflix_logo_icon_170919.png"
+                        style="width: 30px; height: auto;" alt="apoio da netflix"></a>
+                <a href="https://www.google.com/"><img src="img/google-color.png" style="width: 30px; height: auto;"
+                        alt="apoio da Google"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navbar = document.querySelector('.navbar');
+        burger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

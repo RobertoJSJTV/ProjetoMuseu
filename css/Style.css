@@ -263,7 +263,14 @@ a {
     font-weight: bold;
     font-size: 25px;
 }
-
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+.dev a{
+    color: #3941a0;
+    font-size: 18px
+}
 .apoio p {
     padding-right: 20px;
     margin-right: 15px;
@@ -708,6 +715,14 @@ a {
         height: 300px;
         display: flex;
     }
+    .dev {
+    text-align: center;
+    font-size: 12px;
+}
+.dev a{
+    color: #3941a0;
+    font-size: 14px
+}
 
 }
 
@@ -726,4 +741,12 @@ a {
         height: 300px;
         display: flex;
     }
+    .dev {
+    text-align: center;
+    font-size: 12px;
+}
+.dev a{
+    color: #3941a0;
+    font-size: 14px
+}
 }

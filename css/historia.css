@@ -1,0 +1,782 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky {
+    position: sticky;
+    background: white;
+    padding-bottom: 20px;
+    top: 0;
+    z-index: 10;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.nav p {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: 25px;
+    font-family: "inter";
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    color: #111;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "inter";
+}
+
+.navbar a:hover {
+    color: rgba(56, 109, 170, 0.8);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "inter";
+    transition: 0.3s;
+}
+
+.um {
+    background: linear-gradient(to left, #dbbd61, #b99117);
+}
+
+.content2 {
+    width: 100vh;
+    margin: 0 auto;
+}
+
+.content2 h2 {
+    font-family: "bebas";
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conteudo1 img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* 0dcaf0 */
+
+.conteudo-iterno h4 {
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "bebas";
+    font-size: 50px;
+    color: #111;
+}
+
+.content3 {
+    width: 100vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content3 p {
+    font-family: "inter";
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: justify;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.ultimo {
+    box-sizing: border-box;
+}
+
+.galery {
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.galery span {
+    font-family: "bebas";
+    display: inline-block;
+}
+
+.galery figure {
+    display: inline-block;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.galery figure img {
+    width: 350px;
+    height: auto;
+}
+
+.galery figcaption {
+    text-align: start;
+    padding-left: 5px;
+}
+
+
+.footer {
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 18px
+}
+
+.apoio p {
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-VariableFont_opsz_wght.woff)
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(../fonts/BebasNeue-Regular.woff)
+}
+
+@media screen and (max-width: 1590px) {
+    .nav p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 45px;
+        font-size: 20px;
+        font-family: "inter";
+    }
+
+    .navbar a {
+        text-decoration: none;
+        text-align: center;
+        color: #111;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "inter";
+    }
+
+    .navbar a:hover {
+        color: rgba(56, 109, 170, 0.8);
+        font-weight: bold;
+        font-size: 15px;
+        font-family: "inter";
+    }
+
+    .content2 {
+        width: 100vh;
+        margin: 0 auto;
+    }
+
+.conteudo1 img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* 0dcaf0 */
+
+.conteudo-iterno h4 {
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "bebas";
+    font-size: 50px;
+    color: #111;
+}
+
+.content3 {
+    border: 1px solid red;
+    width: 60vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content3 p {
+    font-family: "inter";
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: justify;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.ultimo {
+    box-sizing: border-box;
+}
+
+.galery {
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.galery span {
+    font-family: "bebas";
+    display: inline-block;
+}
+
+.galery figure {
+    display: inline-block;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.galery figure img {
+    width: 350px;
+    height: auto;
+}
+
+.galery figcaption {
+    text-align: start;
+    padding-left: 5px;
+}
+
+
+.footer {
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 18px
+}
+
+.apoio p {
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 1090px) {
+    .navbar {
+        display: flex;
+        gap: 10px;
+        margin-right: 110px;
+        margin-top: 25px;
+    }
+
+    .nav p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 45px;
+        font-size: 15px;
+        font-family: "inter";
+    }
+
+    .navbar a {
+        text-decoration: none;
+        text-align: center;
+        color: #111;
+        font-weight: bold;
+        font-size: 10px;
+        font-family: "inter";
+    }
+
+    .navbar a:hover {
+        color: rgba(56, 109, 170, 0.8);
+        font-weight: bold;
+        font-size: 10px;
+        font-family: "inter";
+    }
+
+    .content2 {
+        width: 60vh;
+        margin: 0 auto;
+    }
+
+ .conteudo1 img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* 0dcaf0 */
+
+.conteudo-iterno h4 {
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "bebas";
+    font-size: 50px;
+    color: #111;
+}
+
+.content3 {
+    width: 30vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content3 p {
+    font-family: "inter";
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: justify;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.ultimo {
+    box-sizing: border-box;
+}
+
+.galery {
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.galery span {
+    font-family: "bebas";
+    display: inline-block;
+}
+
+.galery figure {
+    display: inline-block;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.galery figure img {
+    width: 350px;
+    height: auto;
+}
+
+.galery figcaption {
+    text-align: start;
+    padding-left: 5px;
+}
+
+
+.footer {
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 18px
+}
+
+.apoio p {
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 790px) {
+
+    .nav p {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: 45px;
+        font-size: 25px;
+        font-family: "inter";
+    }
+
+    .navbar a {
+        text-decoration: none;
+        text-align: center;
+        color: #111;
+        font-weight: bold;
+        font-size: 10px;
+        font-family: "inter";
+    }
+
+    .navbar a:hover {
+        color: rgba(56, 109, 170, 0.8);
+        font-weight: bold;
+        font-size: 10px;
+        font-family: "inter";
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: right;
+        padding: 0 20px;
+    }
+
+ .conteudo1 img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* 0dcaf0 */
+
+.conteudo-iterno h4 {
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "bebas";
+    font-size: 50px;
+    color: #111;
+}
+
+.content3 {
+    width: 30vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content3 p {
+    font-family: "inter";
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: justify;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.ultimo {
+    box-sizing: border-box;
+}
+
+.galery {
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.galery span {
+    font-family: "bebas";
+    display: inline-block;
+}
+
+.galery figure {
+    display: inline-block;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.galery figure img {
+    width: 350px;
+    height: auto;
+}
+
+.galery figcaption {
+    text-align: start;
+    padding-left: 5px;
+}
+
+
+.footer {
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 18px
+}
+
+.apoio p {
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 430px) {
+
+ .conteudo1 img {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+/* 0dcaf0 */
+
+.conteudo-iterno h4 {
+    margin-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "bebas";
+    font-size: 50px;
+    color: #111;
+}
+
+.content3 {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.content3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.content3 p {
+    font-family: "inter";
+    font-size: 18px;
+    margin-top: 0px;
+    text-align: justify;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.ultimo {
+    box-sizing: border-box;
+}
+
+.galery {
+    text-align: center;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.galery span {
+    font-family: "bebas";
+    display: inline-block;
+}
+
+.galery figure {
+    display: inline-block;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.galery figure img {
+    width: 350px;
+    height: auto;
+}
+
+.galery figcaption {
+    text-align: start;
+    padding-left: 5px;
+}
+
+
+.footer {
+    padding: 25px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dev {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 18px
+}
+
+.apoio p {
+    padding-right: 20px;
+    margin-right: 15px;
+}
+
+.apoio {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+}
