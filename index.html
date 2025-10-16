@@ -13,6 +13,7 @@
 <body>
     <div class="nav sticky">
         <p><a href="index.html">Arca da Vida e do tempo</a></p>
+            <button class="burger" aria-label="Abrir menu">&#9776;</button>
         <ul class="navbar">
             <li><a href="">Museu</a></li>
             <li><a href="">Exposições</a></li>
@@ -114,6 +115,13 @@
             </div>
         </div>
     </div>
+    <script>
+    const burger = document.querySelector('.burger');
+    const navbar = document.querySelector('.navbar');
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
 </body>
 
 </html>
