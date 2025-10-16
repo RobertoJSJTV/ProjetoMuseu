@@ -18,7 +18,13 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
+.sticky{
+    position: sticky;
+    background: white;
+    padding-bottom: 20px;
+    top: 0;
+    z-index: 10;
+}
 .nav p {
     font-weight: bold;
     margin-top: 15px;
@@ -100,19 +106,23 @@ a {
 }
 
 .conteudo1 img {
-    width: 270px;
-    height: 230px;
-    margin: 10px 10px;
-    border-radius: 25px;
+    width: 90%;
+    height: 200px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
-
+/* 0dcaf0 */
 .conteudo-iterno {
     margin: 10px;
     width: 290px;
     height: 450px;
     background: #D9D9D9;
     border-radius: 10px;
-
+    border: 2px solid #474747;
+}
+.conteudo-iterno:hover {
+    transform: scale(1.05);
 }
 
 .conteudo-iterno a h4 {
