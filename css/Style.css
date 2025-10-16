@@ -394,7 +394,7 @@ a {
     }
 
     .content2 {
-        width: 100vh;
+        width: 60vh;
         margin: 0 auto;
     }
 
@@ -437,7 +437,7 @@ a {
     }
 
     .historia {
-        width: 100vh;
+        width: 60vh;
         margin: 0 auto;
         height: 300px;
         display: flex;
@@ -611,5 +611,119 @@ a {
     .apoio p {
         padding-right: 0px;
         margin-right: 0px;
+    }
+}
+@media screen and (max-width: 430px) {
+
+    .content2 {
+        width: 30vh;
+        margin: 0 auto;
+    }
+        .conteudo1 img {
+        width: 170px;
+        height: 130px;
+        margin: 10px 10px;
+        border-radius: 25px;
+    }
+
+    .conteudo-iterno {
+        margin: 10px;
+        width: 190px;
+        height: 370px;
+        background: #D9D9D9;
+        border-radius: 10px;
+    }
+
+    .conteudo-iterno a h4 {
+        text-transform: uppercase;
+        font-family: "bebas";
+        font-size: 15px;
+        margin-left: 15px;
+        letter-spacing: 1px;
+        color: #111;
+    }
+
+    .conteudo-iterno p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        /* Define o limite de linhas */
+        -webkit-box-orient: vertical;
+        font-family: "inter";
+        font-size: 15px;
+        margin: 0px 5px;
+        margin-top: 5px;
+        text-align: justify;
+        color: #111;
+    }
+
+    .foto img {
+        width: 100px;
+        border-radius: 15px;
+        height: auto;
+        object-fit: cover;
+    }
+        .texto-historia {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .titulo-historia {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .titulo-historia h2 {
+        font-family: "bebas";
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+
+    .texto-historia p a {
+        text-decoration: none;
+        color: #111;
+        font-family: "inter";
+        font-size: 8px;
+        font-weight: bold;
+        transition: 0.3s;
+        border: 1px solid black;
+        padding: 5px 10px;
+        border-radius: 25px;
+    }
+
+    .texto-historia p a:hover {
+        color: #386daa;
+        text-decoration: underline;
+        border: 1px solid #386daa;
+        padding: 5px 10px;
+        border-radius: 25px;
+    }
+    .historia {
+        width: 30vh;
+        margin: 0 auto;
+        height: 300px;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-height: 430px) {
+    .historia {
+        width: 50vh;
+        margin: 0 auto;
+        height: 300px;
+        display: flex;
+    }
+}
+@media screen and (max-height: 740px) {
+    .historia {
+        width: 40vh;
+        margin: 0 auto;
+        height: 300px;
+        display: flex;
     }
 }
