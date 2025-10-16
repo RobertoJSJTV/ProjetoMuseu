@@ -59,7 +59,7 @@ a {
 .content1 {
     width: auto;
     height: 400px;
-    background: url(/img/content1.png) center;
+    background: url(../img/content1.png) center;
 }
 
 .content {
@@ -139,7 +139,7 @@ a {
 .content3 {
     width: auto;
     height: 500px;
-    background: url(/img/dente-de-sabres.png) center;
+    background: url(../img/dente-de-sabres.png) center;
 }
 
 .content3 h2 {
@@ -252,12 +252,12 @@ a {
 
 @font-face {
     font-family: "inter";
-    src: url(/fonts/Inter-VariableFont_opsz_wght.woff)
+    src: url(../fonts/Inter-VariableFont_opsz_wght.woff)
 }
 
 @font-face {
     font-family: "bebas";
-    src: url(/fonts/BebasNeue-Regular.woff)
+    src: url(../fonts/BebasNeue-Regular.woff)
 }
 
 @media screen and (max-width: 1090px) {
