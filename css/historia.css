@@ -1,781 +1,235 @@
+/* ---------------- RESET ---------------- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  color: #111;
 }
 
 ul {
-    list-style: none;
-
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
+/* ---------------- NAVBAR ---------------- */
 .nav {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.sticky {
-    position: sticky;
-    background: white;
-    padding-bottom: 20px;
-    top: 0;
-    z-index: 10;
-}
-
-.burger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 32px;
-    cursor: pointer;
-    margin-right: 20px;
-    margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav p {
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 45px;
-    font-size: 25px;
-    font-family: "inter";
-}
-
-.nav a {
-    text-decoration: none;
-    color: #111;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar {
-    display: flex;
-    gap: 10px;
-    margin-right: 10px;
-    margin-top: 25px;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    text-align: center;
-    color: #111;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "inter";
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: rgba(56, 109, 170, 0.8);
-    font-weight: bold;
-    font-size: 20px;
-    font-family: "inter";
-    transition: 0.3s;
+  color: rgba(56, 109, 170, 0.8);
 }
 
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ---------------- CONTEÚDO ---------------- */
 .um {
-    background: linear-gradient(to left, #dbbd61, #b99117);
+  background: linear-gradient(to left, #dbbd61, #b99117);
+  padding: 20px;
 }
 
 .content2 {
-    width: 100vh;
-    margin: 0 auto;
-}
-
-.content2 h2 {
-    font-family: "bebas";
-    margin-top: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .conteudos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .conteudo1 img {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: none;
+  width: 250px;
+  display: inline-block;
+  border-radius: 5px;
 }
-
-/* 0dcaf0 */
 
 .conteudo-iterno h4 {
-    margin-left: 10px;
+  font-family: "bebas", sans-serif;
+  font-size: 2.5rem;
     display: inline-block;
-    text-transform: uppercase;
-    font-family: "bebas";
-    font-size: 50px;
-    color: #111;
+  text-transform: uppercase;
+  color: #111;
 }
 
+/* ---------------- HISTÓRIA ---------------- */
 .content3 {
-    width: 100vh;
-    margin: 0 auto;
-    margin-bottom: 50px;
+  max-width: 900px;
+  margin: 50px auto;
 }
 
 .content3 h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
+  margin: 30px 0;
 }
 
 .content3 p {
-    font-family: "inter";
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: justify;
-    color: #111;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    padding: 0 10px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-.ultimo {
-    box-sizing: border-box;
-}
-
+/* ---------------- GALERIA ---------------- */
 .galery {
-    text-align: center;
-    width: 100%;
-}
-
-.galery span {
-    font-family: "bebas";
-    display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  text-align: center;
 }
 
 .galery figure {
-    display: inline-block;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 15px;
+  max-width: 320px;
 }
 
-.galery figure img {
-    width: 350px;
-    height: auto;
+.galery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .galery figcaption {
-    text-align: start;
-    padding-left: 5px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #333;
 }
 
-
+/* ---------------- FOOTER ---------------- */
 .footer {
-    padding: 25px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
+  background: #d9d9d9;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer .direitos {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dev {
-    text-align: center;
-    font-size: 16px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .dev a {
-    color: #3941a0;
-    font-size: 18px
-}
-
-.apoio p {
-    padding-right: 20px;
-    margin-right: 15px;
+  color: #3941a0;
+  font-size: 1rem;
 }
 
 .apoio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+
+  .navbar.active {
     display: flex;
-    font-weight: bold;
-    font-size: 25px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .content3 {
+    padding: 0 10px;
+  }
+
+  .galery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav p {
+    font-size: 1.1rem;
+  }
+
+  .conteudo-iterno h4 {
+    font-size: 1.8rem;
+  }
+
+  .galery figure {
+    max-width: 90%;
+  }
+
+  .content3 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content3 p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------------- FONTES ---------------- */
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter-VariableFont_opsz_wght.woff);
 }
 
 @font-face {
-    font-family: "inter";
-    src: url(../fonts/Inter-VariableFont_opsz_wght.woff)
-}
-
-@font-face {
-    font-family: "bebas";
-    src: url(../fonts/BebasNeue-Regular.woff)
-}
-
-@media screen and (max-width: 1590px) {
-    .nav p {
-        font-weight: bold;
-        margin-top: 15px;
-        margin-left: 45px;
-        font-size: 20px;
-        font-family: "inter";
-    }
-
-    .navbar a {
-        text-decoration: none;
-        text-align: center;
-        color: #111;
-        font-weight: bold;
-        font-size: 15px;
-        font-family: "inter";
-    }
-
-    .navbar a:hover {
-        color: rgba(56, 109, 170, 0.8);
-        font-weight: bold;
-        font-size: 15px;
-        font-family: "inter";
-    }
-
-    .content2 {
-        width: 100vh;
-        margin: 0 auto;
-    }
-
-.conteudo1 img {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-/* 0dcaf0 */
-
-.conteudo-iterno h4 {
-    margin-left: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "bebas";
-    font-size: 50px;
-    color: #111;
-}
-
-.content3 {
-    border: 1px solid red;
-    width: 60vh;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.content3 h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.content3 p {
-    font-family: "inter";
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: justify;
-    color: #111;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-.ultimo {
-    box-sizing: border-box;
-}
-
-.galery {
-    text-align: center;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.galery span {
-    font-family: "bebas";
-    display: inline-block;
-}
-
-.galery figure {
-    display: inline-block;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 15px;
-}
-
-.galery figure img {
-    width: 350px;
-    height: auto;
-}
-
-.galery figcaption {
-    text-align: start;
-    padding-left: 5px;
-}
-
-
-.footer {
-    padding: 25px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .direitos {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dev {
-    text-align: center;
-    font-size: 16px;
-}
-
-.dev a {
-    color: #3941a0;
-    font-size: 18px
-}
-
-.apoio p {
-    padding-right: 20px;
-    margin-right: 15px;
-}
-
-.apoio {
-    display: flex;
-    font-weight: bold;
-    font-size: 25px;
-}
-}
-
-@media screen and (max-width: 1090px) {
-    .navbar {
-        display: flex;
-        gap: 10px;
-        margin-right: 110px;
-        margin-top: 25px;
-    }
-
-    .nav p {
-        font-weight: bold;
-        margin-top: 15px;
-        margin-left: 45px;
-        font-size: 15px;
-        font-family: "inter";
-    }
-
-    .navbar a {
-        text-decoration: none;
-        text-align: center;
-        color: #111;
-        font-weight: bold;
-        font-size: 10px;
-        font-family: "inter";
-    }
-
-    .navbar a:hover {
-        color: rgba(56, 109, 170, 0.8);
-        font-weight: bold;
-        font-size: 10px;
-        font-family: "inter";
-    }
-
-    .content2 {
-        width: 60vh;
-        margin: 0 auto;
-    }
-
- .conteudo1 img {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-/* 0dcaf0 */
-
-.conteudo-iterno h4 {
-    margin-left: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "bebas";
-    font-size: 50px;
-    color: #111;
-}
-
-.content3 {
-    width: 30vw;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.content3 h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.content3 p {
-    font-family: "inter";
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: justify;
-    color: #111;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-.ultimo {
-    box-sizing: border-box;
-}
-
-.galery {
-    text-align: center;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.galery span {
-    font-family: "bebas";
-    display: inline-block;
-}
-
-.galery figure {
-    display: inline-block;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 15px;
-}
-
-.galery figure img {
-    width: 350px;
-    height: auto;
-}
-
-.galery figcaption {
-    text-align: start;
-    padding-left: 5px;
-}
-
-
-.footer {
-    padding: 25px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .direitos {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dev {
-    text-align: center;
-    font-size: 16px;
-}
-
-.dev a {
-    color: #3941a0;
-    font-size: 18px
-}
-
-.apoio p {
-    padding-right: 20px;
-    margin-right: 15px;
-}
-
-.apoio {
-    display: flex;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-}
-
-@media screen and (max-width: 790px) {
-
-    .nav p {
-        font-weight: bold;
-        margin-top: 15px;
-        margin-left: 45px;
-        font-size: 25px;
-        font-family: "inter";
-    }
-
-    .navbar a {
-        text-decoration: none;
-        text-align: center;
-        color: #111;
-        font-weight: bold;
-        font-size: 10px;
-        font-family: "inter";
-    }
-
-    .navbar a:hover {
-        color: rgba(56, 109, 170, 0.8);
-        font-weight: bold;
-        font-size: 10px;
-        font-family: "inter";
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-        position: absolute;
-        top: 55px;
-        right: 0px;
-        background: #fff;
-        flex-direction: column;
-        gap: 0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        padding: 10px 0;
-        z-index: 100;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    .navbar li {
-        margin: 10px 0;
-        text-align: right;
-        padding: 0 20px;
-    }
-
- .conteudo1 img {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-/* 0dcaf0 */
-
-.conteudo-iterno h4 {
-    margin-left: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "bebas";
-    font-size: 50px;
-    color: #111;
-}
-
-.content3 {
-    width: 30vw;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.content3 h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.content3 p {
-    font-family: "inter";
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: justify;
-    color: #111;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-.ultimo {
-    box-sizing: border-box;
-}
-
-.galery {
-    text-align: center;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.galery span {
-    font-family: "bebas";
-    display: inline-block;
-}
-
-.galery figure {
-    display: inline-block;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 15px;
-}
-
-.galery figure img {
-    width: 350px;
-    height: auto;
-}
-
-.galery figcaption {
-    text-align: start;
-    padding-left: 5px;
-}
-
-
-.footer {
-    padding: 25px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .direitos {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dev {
-    text-align: center;
-    font-size: 16px;
-}
-
-.dev a {
-    color: #3941a0;
-    font-size: 18px
-}
-
-.apoio p {
-    padding-right: 20px;
-    margin-right: 15px;
-}
-
-.apoio {
-    display: flex;
-    font-weight: bold;
-    font-size: 25px;
-}
-}
-
-@media screen and (max-width: 430px) {
-
- .conteudo1 img {
-    display: inline-block;
-    width: 30%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 5px;
-    box-shadow: none;
-}
-
-/* 0dcaf0 */
-
-.conteudo-iterno h4 {
-    margin-left: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "bebas";
-    font-size: 50px;
-    color: #111;
-}
-
-.content3 {
-    width: 90vw;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.content3 h1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.content3 p {
-    font-family: "inter";
-    font-size: 18px;
-    margin-top: 0px;
-    text-align: justify;
-    color: #111;
-    margin-bottom: 10px;
-    line-height: 1.6;
-    padding: 0 10px;
-}
-
-.ultimo {
-    box-sizing: border-box;
-}
-
-.galery {
-    text-align: center;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.galery span {
-    font-family: "bebas";
-    display: inline-block;
-}
-
-.galery figure {
-    display: inline-block;
-    gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 0 15px;
-}
-
-.galery figure img {
-    width: 350px;
-    height: auto;
-}
-
-.galery figcaption {
-    text-align: start;
-    padding-left: 5px;
-}
-
-
-.footer {
-    padding: 25px;
-    background: #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .direitos {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.dev {
-    text-align: center;
-    font-size: 16px;
-}
-
-.dev a {
-    color: #3941a0;
-    font-size: 18px
-}
-
-.apoio p {
-    padding-right: 20px;
-    margin-right: 15px;
-}
-
-.apoio {
-    display: flex;
-    font-weight: bold;
-    font-size: 25px;
-}
-
+  font-family: "bebas";
+  src: url(../fonts/BebasNeue-Regular.woff);
 }
