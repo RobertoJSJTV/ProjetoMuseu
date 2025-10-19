@@ -86,7 +86,7 @@ a {
 .conteudo-iterno h4 {
   font-family: "bebas", sans-serif;
   font-size: 2.5rem;
-    display: inline-block;
+  display: inline-block;
   text-transform: uppercase;
   color: #111;
 }
@@ -115,7 +115,7 @@ a {
   justify-content: center;
   gap: 25px;
   padding: 20px;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .galery figure {
@@ -155,7 +155,11 @@ a {
   color: #3941a0;
   font-size: 1rem;
 }
-
+.dev a:hover {
+  color: rgba(97, 167, 248, 0.8);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
 .apoio {
   display: flex;
   flex-direction: column;

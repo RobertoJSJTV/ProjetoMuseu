@@ -1,0 +1,270 @@
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    color: #111;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: rgba(56, 109, 170, 0.8);
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ---------------- CONTEÚDO ---------------- */
+.um {
+    background: linear-gradient(to left, #dbbd61, #b99117);
+    padding: 20px;
+}
+
+.content2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.conteudos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.conteudo1 img {
+    width: 350px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.conteudo-iterno h4 {
+    font-family: "bebas", sans-serif;
+    font-size: 3.9rem;
+    padding-left: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/* ---------------- HISTÓRIA ---------------- */
+.content3 {
+    max-width: 900px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.content3 h1 {
+    margin: 30px 0;
+    font-family: "bebas", sans-serif;
+}
+
+.content3 img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.content3 h3 {
+    display: block;
+    font-family: "bebas", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.content3 p {
+    display: block;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: "inter", sans-serif;
+}
+
+
+.textos {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.textos_content3 {
+    margin-left: 5px;
+}
+
+.textos_content3 li {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "inter", sans-serif;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    background: #d9d9d9;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .direitos {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.dev a {
+    color: #3941a0;
+    font-size: 1rem;
+}
+
+.dev a:hover {
+    color: rgba(97, 167, 248, 0.8);
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.apoio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .content3 {
+        padding: 0 10px;
+    }
+
+    .textos {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .textos__content {
+        width: 100%;
+    }
+
+    .galery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav p {
+        font-size: 1.1rem;
+    }
+
+    .conteudo-iterno h4 {
+        font-size: 1.8rem;
+    }
+
+    .galery figure {
+        max-width: 90%;
+    }
+
+    .content3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .content3 p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ---------------- FONTES ---------------- */
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-VariableFont_opsz_wght.woff);
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(../fonts/BebasNeue-Regular.woff);
+}

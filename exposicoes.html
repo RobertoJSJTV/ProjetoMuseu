@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icone-museu.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/expo.css">
+    <link rel="stylesheet" href="/js/conexao.js">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Museu Arca da Vida e do Tempo</title>
+</head>
+
+<body>
+    <div class="nav sticky">
+        <p><a href="index.html">Arca da Vida e do tempo</a></p>
+        <button class="burger" aria-label="Abrir menu">&#9776;</button>
+        <ul class="navbar">
+            <li><a href="historia.html">Museu</a></li>
+            <li><a href="exposicoes.html">Exposições</a></li>
+            <li><a href="">Agendamento</a></li>
+            <li><a href="">Horarios</a></li>
+        </ul>
+    </div>
+    <div class="um"><!-- Inicio area de titulo -->
+        <div class="content2">
+            <div class="conteudos">
+                <div class="conteudo1">
+                    <div class="conteudo-iterno">
+                        <img src="img/admirando.png"
+                            alt="imagem de um jovem visitante do museu admirando uma exposição">
+                        <h4>exposições</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Fim area de titulo -->
+
+    <div class="content3"><!-- Inicio expo temp -->
+        <h1>Exposições temporária Atual</h1>
+        <div class="textos">
+            <img src="img/dente-de-sabres.png" alt="Imagem da exposição gigantes da era do gelo">
+            <div class="textos_content3">
+                <h3>gigantes da era do gelo</h3>
+                <p>Uma imersão no período glacial, com réplicas animatrônicas de animais como o Megatério
+                    (preguiça-gigante), o Smilodon (tigre-dentes-de-sabre) e o Glyptodon. A exposição inclui modelos
+                    interativos
+                    que explicam as mudanças climáticas da época e como as espécies se adaptaram para sobreviver.</p>
+            </div>
+        </div>
+        <hr>
+        <h1>Exposição de Longa duração</h1>
+    </div><!-- Fim expedicoes tempo -->
+    <div class="content3"><!-- Inicio Expedicoes perma -->
+        <div class="textos">
+            <img src="img/t-rex.png" alt="Imagem da exposição a jornada dos milenios">
+            <div class="textos_content3">
+                <h3>a jornada dos milenios</h3>
+                <p>Esta galeria é uma viagem imersiva através das eras geológicas, narrando a formação da Terra e a
+                    evolução da vida desde os primeiros organismos até o surgimento dos grandes mamíferos. A exposição é
+                    organizada cronologicamente, começando com minerais e rochas do período Pré-Cambriano e avançando
+                    para os períodos de grande biodiversidade.</p>
+                <ul>
+                    <li><b>Destaques e Experiência:</b></li>
+                    <li><b>Fósseis Testemunhas:</b> O visitante é confrontado com uma vasta coleção de fósseis
+                        (somatofósseis e
+                        icnofósseis) — desde trilobitas e amonites perfeitamente preservadas até folhas e madeiras
+                        petrificadas. O foco está na importância dos fósseis para a datação e reconstrução de
+                        paleoambientes.</li>
+                    <li><b>Os Gigantes do Mesozoico:</b> A ala central é dominada pelo imponente esqueleto completo de
+                        um
+                        Tiranossauro Rex e o de um grande saurópode (pescoçudo), montados em poses dinâmicas que recriam
+                        uma caçada pré-histórica. Painéis luminosos ao redor explicam a taxonomia, a biomecânica e o
+                        comportamento desses animais.</li>
+                    <li><b>O Brasil Pré-Histórico:</b> Uma seção especial dedicada à paleontologia brasileira,
+                        apresentando
+                        réplicas de dinossauros encontrados no Brasil, como o Maxakalisaurus e pterossauros da Bacia do
+                        Araripe, ressaltando a importância do patrimônio paleontológico nacional.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="textos">
+            <img src="img/aquario-grande.png" alt="Imagem da exposição O Grande Ecossistema">
+            <div class="textos_content3">
+                <h3>O Grande Ecossistema</h3>
+                <p>Esta exposição é um tributo interativo à biodiversidade atual, focando na complexa teia de vida e nas
+                    relações ecológicas (cadeias alimentares, simbiose) entre espécies e seus habitats. O objetivo é
+                    demonstrar a interconexão da vida e a urgência da conservação.</p>
+                <ul>
+                    <li><b>Destaques e Experiência:</b></li>
+                    <li><b>Aquário de Barreira de Corais:</b> Um aquário cilíndrico de três andares que simula um recife
+                        de coral vivo. O visitante pode observar de perto a explosão de cores e a dança de centenas de
+                        espécies de peixes tropicais, raias e invertebrados, enfatizando o recife como um dos
+                        ecossistemas mais diversos e ameaçados do planeta.</li>
+                    <li><b>Viveiro de Borboletas e Insetos:</b> Uma estufa climatizada e paisagisticamente recriada como
+                        uma floresta tropical. Os visitantes podem caminhar por entre a vegetação, observando centenas
+                        de borboletas exóticas voando livremente, aprendendo sobre metamorfose, camuflagem e a função
+                        dos insetos como bioindicadores de saúde ambiental.</li>
+                    <li><b>Dioramas Biogeográficos:</b> Uma série de grandes dioramas de última geração que recriam
+                        ecossistemas terrestres distintos (Mata Atlântica, Cerrado, Savana Africana), com animais
+                        taxidermizados em poses realistas, ilustrando as interações entre fauna, flora e fatores
+                        abióticos (clima, solo).</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="textos">
+            <img src="img/noite-no.png" alt="Imagem da exposição Noite no Laboratório">
+            <div class="textos_content3">
+                <h3>Noite no Laboratório</h3>
+                <p>Este é um espaço dedicado a desmistificar a ciência e mostrar o trabalho "por trás das cortinas" dos
+                    museus de história natural. A iluminação é dramática (evocando um laboratório noturno) e foca nas
+                    áreas de pesquisa, preparo e conservação.</p>
+                <ul>
+                    <li><b>Destaques e Experiência:</b></li>
+                    <li><b>Estação de Taxidermia e Conservação:</b> Uma vitrine aberta simula um ateliê de taxidermia,
+                        com ferramentas, moldes e um artista-cientista trabalhando em um espécime. Painéis de vídeo
+                        mostram o rigoroso processo de preparação e preservação de coleções zoológicas e botânicas.</li>
+                    <li><b>Paleontologia e o Tempo Profundo:</b> Uma réplica de um "sítio de escavação" em andamento,
+                        onde é possível ver técnicos em ação (animatrônicos ou em vídeo) limpando e catalogando fósseis
+                        com pincéis e ferramentas delicadas. Uma exposição interativa sobre Datação por Carbono e outros
+                        métodos radiométricos explica como a ciência determina a idade de um achado.</li>
+                    <li><b>A Coleção Invisível:</b>Armários de coleção com amostras reais de referência (peles,
+                        esqueletos, espécimes em fluidos) estão parcialmente abertos, demonstrando a vasta biblioteca de
+                        vida que é mantida para pesquisa científica, não apenas para exibição pública.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="textos">
+            <img src="img/pedras-preci.png" alt="Imagem da exposição O Coração de Pedra: Geologia e Minerais">
+            <div class="textos_content3">
+                <h3>O Coração de Pedra: Geologia e Minerais</h3>
+                <p>Esta exposição mergulha nas profundezas do planeta, revelando a história geológica da Terra, desde o
+                    seu núcleo até as montanhas mais altas. Ela explora a composição da crosta terrestre, os ciclos de
+                    formação das rochas (ígneas, sedimentares e metamórficas) e a fascinante beleza dos minerais e
+                    gemas.</p>
+                <ul>
+                    <li><b>Destaques e Experiência:</b></li>
+                    <li><b>A Maquete Tectônica:</b> Uma grande maquete interativa e animada ilustra a dinâmica das
+                        placas tectônicas, mostrando como vulcões, terremotos e a formação de continentes moldaram a
+                        superfície da Terra ao longo de bilhões de anos.</li>
+                    <li><b>O Salão das Gemas: </b>Uma área de vitrines com iluminação especial exibe uma coleção
+                        deslumbrante de gemas brutas e lapidadas, incluindo cristais de quartzo gigantes, ametistas do
+                        sul do Brasil e exemplares raros de diamantes e opalas. Painéis explicam a formação química e
+                        mineralógica de cada peça.</li>
+                    <li><b>O Ciclo das Rochas: </b>Uma demonstração prática e visual que permite aos visitantes manusear
+                        amostras de rochas e entender como elas se transformam umas nas outras através do calor, da
+                        pressão e do intemperismo, conectando a geologia ao ambiente que pisamos.</li>
+                    <li><b>Meteoritos: </b>Uma seção dedicada a rochas extraterrestres, com fragmentos reais de
+                        meteoritos, incluindo um espécime de meteorito metálico pesado, para discutir a origem do nosso
+                        sistema solar e o impacto desses corpos na história da Terra.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="textos">
+            <img src="img/evolucao.png" alt="Imagem da exposição Os Sete Milhões de Anos: Evolução Humana">
+            <div class="textos_content3">
+                <h3>Os Sete Milhões de Anos: Evolução Humana</h3>
+                <p>Esta exposição traça a complexa e surpreendente jornada evolutiva da nossa própria espécie, o Homo
+                    sapiens, desde os primeiros hominídeos bípedes até o homem moderno. Utilizando réplicas fiéis e
+                    reconstruções artísticas, o museu convida o visitante a refletir sobre o que significa ser humano.
+                </p>
+                <ul>
+                    <li><b>Destaques e Experiência:</b></li>
+                    <li><b>O Caminho dos Primatas:</b> A exposição começa na linhagem dos primatas, com dioramas de
+                        espécies atuais e extintas. A área principal exibe réplicas de crânios e esqueletos de
+                        hominídeos, como "Lucy" (Australopithecus afarensis) e o Homo habilis, dispostas lado a lado
+                        para ilustrar o aumento do volume cerebral e a evolução do bipedismo.</li>
+                    <li><b>Ferramentas e Cultura: </b>Uma linha do tempo interativa apresenta a evolução tecnológica
+                        humana, desde as lascas de pedra do Paleolítico até o uso do fogo e o desenvolvimento de
+                        ferramentas mais complexas, como pontas de lança talhadas. Os artefatos são exibidos em
+                        vitrines, acompanhados de vídeos que mostram como eles eram usados.</li>
+                    <li><b>O Nascimentos da Arte e da Mente: </b>Uma seção imersiva recria a atmosfera de uma caverna,
+                        com reproduções de arte rupestre (como as de Lascaux) e artefatos ornamentais, explorando a
+                        "explosão criativa" do Paleolítico Superior e o surgimento do pensamento simbólico e da
+                        linguagem.</li>
+                    <li><b>O Homem no Antropoceno: </b>A exposição culmina em um módulo que discute a posição atual do
+                        Homo sapiens no planeta e nosso impacto nos ecossistemas, propondo uma reflexão sobre a
+                        responsabilidade humana no futuro da vida na Terra.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div><!-- Fim expo perma -->
+
+
+
+    <div class="footer">
+        <div class="redes">
+            <a href="https://x.com/home"><img src="img/x.png" style="width: 29px; height: 29px;"
+                    alt="icone do twitter"></a>
+            <a href="https://www.facebook.com/"><img src="img/facebook.png" style="width: 29px; height: 29px;"
+                    alt="icone do facebook"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png" style="width: 29px; height: 29px;"
+                    alt="icone do instagram"></a>
+            <a href="https://www.youtube.com/"><img src="img/youtube.png" style="width: 29px; height: 29px;"
+                    alt="icone do youtube"></a>
+        </div>
+        <div class="direitos">
+            &copy; Todos os direitos reservados 2025
+            <p class="dev">desenvolvido por <a href="https://robertojsjtv.github.io/Portifolio/">Roberto Silva</a></p>
+        </div>
+        <div class="apoio">
+            <p>APOIO</p>
+            <div>
+                <a href="https://www.amazon.com.br"><img src="img/Amazon_logo.svg.png"
+                        style="width: 50px; height: auto;" alt="apoio da amazon"></a>
+                <a href="https://www.netflix.com"><img src="img/netflix_logo_icon_170919.png"
+                        style="width: 30px; height: auto;" alt="apoio da netflix"></a>
+                <a href="https://www.google.com/"><img src="img/google-color.png" style="width: 30px; height: auto;"
+                        alt="apoio da Google"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navbar = document.querySelector('.navbar');
+        burger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
