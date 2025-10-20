@@ -132,9 +132,11 @@ a {
     color: #5e5e5e;
     font-family: "inter", sans-serif;
 }
-.textos input[textarea]{
+
+.textos input[textarea] {
     margin: 15px;
 }
+
 .content3 .func p {
     margin-right: 25px;
 
@@ -284,12 +286,23 @@ th {
         font-size: 1.8rem;
     }
 
+    .conteudo1 img {
+        width: 250px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
     .galery figure {
         max-width: 90%;
     }
 
     .content3 h1 {
         font-size: 1.5rem;
+    }
+
+    .tab {
+        width: 100%;
+
     }
 
     .content3 p {
