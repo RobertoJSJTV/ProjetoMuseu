@@ -129,9 +129,27 @@ a {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 15px;
+    color: #5e5e5e;
     font-family: "inter", sans-serif;
 }
+.textos input[textarea]{
+    margin: 15px;
+}
+.content3 .func p {
+    margin-right: 25px;
 
+}
+
+.content3 .func li {
+    margin-right: 25px;
+}
+
+.func .sub-title {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #111;
+    font-weight: bold;
+}
 
 .textos {
     margin-top: 20px;
@@ -152,6 +170,27 @@ a {
     font-family: "inter", sans-serif;
 }
 
+.tab {
+    width: 100%;
+    border-collapse: collapse;
+    padding-top: 20px;
+    text-indent: 10px;
+}
+
+.tab td,
+th {
+    padding: 10px;
+    border-bottom: 1px solid rgb(117, 116, 116);
+}
+
+.loca {
+    margin-top: 20px;
+}
+
+.loca p {
+    font-family: "inter", sans-serif;
+    color: #111;
+}
 
 /* ---------------- FOOTER ---------------- */
 .footer {
